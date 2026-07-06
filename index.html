@@ -1,549 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhradeep Biswas Memorial Archive (2006 - Present)</title>
-  <meta name="description" content="In sarcastic commemoration of Abhradeep Biswas (2006 - Present). An interactive 90s retro desktop experience tracking his past continuous activities.">
-  
-  <!-- Retro Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <meta name="description"
+    content="Photographic Portfolio & Visual Journal. Capture of silent moments, warm landscapes, and human stories close to home.">
+  <title>Abhradeep Biswas | Photographer Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="crt-glow crt-scanlines">
 
-  <!-- Audio Context Activator & Loading/BIOS Screen -->
-  <div id="bios-screen" class="bios-container">
-    <div class="bios-text">
-      <p>AMIBIOS (C) 2006 ABHRA-ELECTRONICS INC.</p>
-      <p>ABHRA-CPU-2006 AT 1.20GHz</p>
-      <p>Checking RAM : 2048KB OK (Low short term memory detected)</p>
-      <p>System BIOS shadowed, Video BIOS shadowed</p>
-      <p>Fixed Disk 0: ABHRA-BRAIN-v2.0-STABLE (Sarcasm Enabled)</p>
-      <p>Fixed Disk 1: JAVA-SPAGHETTI-CODE-DISASTER</p>
-      <p>Keyboard... Detected (Worn out keys: C, V, S, Semicolon)</p>
-      <p>Mouse... Detected (Scrolling aimlessly)</p>
-      <p class="blink">Press ANY KEY or CLICK to boot ABHRA-OS.EXE...</p>
-    </div>
-    <div class="boot-bar-container">
-      <div id="boot-progress-bar" class="boot-bar"></div>
-    </div>
-    <button id="boot-btn" class="retro-btn">BOOT SYSTEM</button>
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- Navigation Header -->
+    <header>
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="logo" id="site-logo">
+          Abhradeep<span> Biswas</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+
+        <div class="controls-group">
+          <!-- Theme Toggler (Sun/Moon SVG) -->
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+            <svg class="moon-icon" viewBox="0 0 24 24">
+              <path
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>
+            <svg class="sun-icon" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m0 13.5V21m9.75-9h-2.25m-13.5 0H3m16.035-6.035l-1.591 1.591M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9zm-9-5.625a5.625 5.625 0 100 11.25 5.625 5.625 0 000-11.25zM5.636 5.636l1.591 1.591m0 10.778l-1.591 1.591M18.364 18.364l-1.591-1.591" />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Drawer Toggle -->
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+      <!-- Hero Intro Section -->
+      <section class="section hero-section">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="hero-subtitle">Visual Journal & Portfolio</span>
+            <h1 class="heading-xl">Capturing the <span class="serif-italic">silent poetry</span> of ordinary days.</h1>
+            <p class="lead hero-intro">
+              I photograph spaces and moments that feel close to home. The way light filters through old windows, the
+              stillness of empty streets after rain, and the honest, quiet stories written on human faces.
+            </p>
+            <div class="hero-actions">
+              <a href="gallery.html" class="btn btn-primary">Explore Gallery</a>
+              <a href="about.html" class="btn btn-secondary">Read Story</a>
+            </div>
+          </div>
+
+          <!-- Featured Image Frame with Fallback/Placeholder -->
+          <div class="hero-image-frame">
+            <div class="hero-image-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="48"
+                height="48">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+              <h3>Morning Dew at the Hearth</h3>
+              <p class="lead" style="font-size: 0.95rem;">A quiet visual reminder that beauty sits right in our everyday
+                spaces.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Works Section -->
+      <section class="section" id="featured-section">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-label">Selected Works</span>
+            <h2 class="heading-lg">Featured Collections</h2>
+          </div>
+          <a href="gallery.html" class="btn btn-secondary" style="padding: 0.6rem 1.25rem; font-size: 0.8rem;">View
+            All</a>
+        </div>
+
+        <div class="featured-grid">
+          <!-- Card 1 -->
+          <div class="work-card" onclick="window.location.href='gallery.html'">
+            <div class="work-card-media aspect-landscape">
+              <img src="images/img_1.jpg" alt="Morning Dew at the Hearth"
+                onerror="handleImageError(this, 'Morning Dew at the Hearth', 'Still Life')">
+            </div>
+            <div class="work-card-info">
+              <div class="work-meta">
+                <span class="work-category">Still Life</span>
+                <span>&bull;</span>
+                <span>June 2026</span>
+              </div>
+              <h3 class="work-card-title">Morning Dew at the Hearth</h3>
+              <p class="work-card-desc">The grass outside the kitchen window was heavy with dew. The morning light cast
+                a long, cold shadow through the glass.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="work-card" onclick="window.location.href='gallery.html'">
+            <div class="work-card-media aspect-portrait">
+              <img src="images/img_2.jpg" alt="Quiet Contemplation"
+                onerror="handleImageError(this, 'Quiet Contemplation', 'Portrait')">
+            </div>
+            <div class="work-card-info">
+              <div class="work-meta">
+                <span class="work-category">Portrait</span>
+                <span>&bull;</span>
+                <span>June 2026</span>
+              </div>
+              <h3 class="work-card-title">Quiet Contemplation</h3>
+              <p class="work-card-desc">A quiet portrait of my grandmother in her reading chair. Her hands tell the
+                story of a hundred winter mornings.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Journal Quote Section -->
+      <section class="section journal-section">
+        <div class="journal-container">
+          <div class="journal-quote-wrap">
+            <p class="journal-quote">
+              To look at a thing until it yields its story. That is what photography is to me. It isn't about chasing
+              the grand spectacle, but about finding the holy in the mundane.
+            </p>
+            <span class="journal-author">Photographer's Philosophy</span>
+          </div>
+          <div style="display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
+            <h3 class="heading-md">A Human Approach</h3>
+            <p style="color: var(--text-muted);">
+              I believe in slow photography. I work with natural light, organic interactions, and long pauses. There is
+              a deep, comforting beauty in objects and places that show wear—creased book pages, worn wooden spoons,
+              weathered gates. They invite us to slow down and remember.
+            </p>
+            <p style="color: var(--text-muted);">
+              This website serves as my digital shelf, a quiet place to stack memories and sketches.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-copy">
+          &copy; 2026 Abhradeep Biswas. All rights reserved. Made with care.
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </footer>
+
   </div>
 
-  <!-- Main Retro Desktop Environment -->
-  <div id="desktop-environment" class="desktop-hidden">
-    
-    <!-- Top News Ticker -->
-    <div class="ticker-container">
-      <div class="ticker-label">NEWS FLASH:</div>
-      <marquee class="ticker-marquee" scrollamount="4">
-        +++ WARNING: Abhradeep Biswas is NOT actually dead, he is very much alive +++ We are just practicing the past continuous tense for nostalgic reasons +++ "He was drinking coffee..." "He was coding..." +++ Guestbook is open for your sarcastic condolences +++ Netscape Navigator 4.0 recommended for viewing +++
-      </marquee>
-    </div>
-
-    <!-- Desktop Grid of Shortcuts -->
-    <div class="desktop-grid">
-      <div class="desktop-icon" id="shortcut-mycomputer" data-window="win-about">
-        <div class="icon-sprite my-computer-icon"></div>
-        <span class="icon-label">My Computer</span>
-      </div>
-      <div class="desktop-icon" id="shortcut-timeline" data-window="win-timeline">
-        <div class="icon-sprite document-icon"></div>
-        <span class="icon-label">Timeline.txt</span>
-      </div>
-      <div class="desktop-icon" id="shortcut-memes" data-window="win-memes">
-        <div class="icon-sprite image-icon"></div>
-        <span class="icon-label">Meme_Vault.exe</span>
-      </div>
-      <div class="desktop-icon" id="shortcut-guestbook" data-window="win-guestbook">
-        <div class="icon-sprite guestbook-icon"></div>
-        <span class="icon-label">Guestbook.db</span>
-      </div>
-      <div class="desktop-icon" id="shortcut-settings" data-window="win-settings">
-        <div class="icon-sprite settings-icon"></div>
-        <span class="icon-label">Config.sys</span>
-      </div>
-      <div class="desktop-icon" id="shortcut-recycle" data-window="win-recycle">
-        <div class="icon-sprite recycle-icon" id="recycle-bin-sprite"></div>
-        <span class="icon-label">Recycle Bin</span>
-      </div>
-    </div>
-
-    <!-- DRAGGABLE WINDOWS -->
-
-    <!-- Window 1: My Computer / About -->
-    <div id="win-about" class="retro-window window-closed" style="top: 10%; left: 15%; width: 420px;">
-      <div class="window-titlebar" id="win-about-titlebar">
-        <div class="titlebar-text">
-          <div class="title-icon my-computer-icon-sm"></div>
-          <span>My Computer - System Information</span>
-        </div>
-        <div class="titlebar-controls">
-          <button class="control-btn btn-minimize" aria-label="Minimize" data-window="win-about"></button>
-          <button class="control-btn btn-maximize" aria-label="Maximize"></button>
-          <button class="control-btn btn-close" aria-label="Close" data-window="win-about"></button>
-        </div>
-      </div>
-      <div class="window-menubar">
-        <span class="menu-item"><u>F</u>ile</span>
-        <span class="menu-item"><u>E</u>edit</span>
-        <span class="menu-item"><u>V</u>iew</span>
-        <span class="menu-item"><u>H</u>elp</span>
-      </div>
-      <div class="window-body">
-        <div class="about-flex">
-          <div class="about-logo my-computer-icon-lg"></div>
-          <div class="about-specs">
-            <h3>Abhradeep Biswas System</h3>
-            <div class="divider"></div>
-            <p><strong>Manufactured:</strong> 2006 (Kolkata Edition)</p>
-            <p><strong>Status:</strong> Semi-operational (Breathing)</p>
-            <p><strong>Primary Engine:</strong> Tea and Sarcasm</p>
-            <p><strong>Memory Capacity:</strong> 4MB (Forgets keys instantly)</p>
-            <p><strong>Graphics Card:</strong> Squinting through glasses</p>
-            <p><strong>Sound Card:</strong> Sighing heavily at compiler errors</p>
-            <div class="divider"></div>
-            <p><em>"He was typing, he was sleeping, he was regretting his choices."</em></p>
-          </div>
-        </div>
-        <div class="window-footer">
-          <button class="retro-btn ok-btn" data-window="win-about">OK</button>
-        </div>
-      </div>
-      <div class="window-statusbar">
-        <span>Ready</span>
-        <span>1 Device Connected</span>
-      </div>
-    </div>
-
-    <!-- Window 2: Timeline.txt -->
-    <div id="win-timeline" class="retro-window window-closed" style="top: 8%; left: 35%; width: 550px; z-index: 10;">
-      <div class="window-titlebar" id="win-timeline-titlebar">
-        <div class="titlebar-text">
-          <div class="title-icon document-icon-sm"></div>
-          <span>Timeline.txt - Notepad</span>
-        </div>
-        <div class="titlebar-controls">
-          <button class="control-btn btn-minimize" aria-label="Minimize" data-window="win-timeline"></button>
-          <button class="control-btn btn-maximize" aria-label="Maximize"></button>
-          <button class="control-btn btn-close" aria-label="Close" data-window="win-timeline"></button>
-        </div>
-      </div>
-      <div class="window-menubar">
-        <span class="menu-item"><u>F</u>ile</span>
-        <span class="menu-item"><u>E</u>dit</span>
-        <span class="menu-item"><u>S</u>earch</span>
-        <span class="menu-item"><u>H</u>elp</span>
-      </div>
-      <div class="window-body scrollable-body">
-        <div class="timeline-header">
-          <h2>THE CHRONICLE OF ABHRA (2006 - PRESENT)</h2>
-          <p>Format: Past Continuous (Since he is technically still alive)</p>
-          <div class="divider"></div>
-        </div>
-        <div class="timeline-container">
-          
-          <div class="timeline-event">
-            <div class="event-year">2006</div>
-            <div class="event-desc">
-              <strong>The Launch Cycle:</strong> Abhradeep was crying for milk, sleeping approximately 18 hours a day, and refusing to compile any code. He was successfully operating without bugs.
-            </div>
-          </div>
-          
-          <div class="timeline-event">
-            <div class="event-year">2010</div>
-            <div class="event-desc">
-              <strong>The Preschool Expansion:</strong> He was scribbling on walls and attempting to eat crayons. He was already suspecting that waking up early for school was a terrible architectural decision.
-            </div>
-          </div>
-
-          <div class="timeline-event">
-            <div class="event-year">2014</div>
-            <div class="event-desc">
-              <strong>The Nokia / Early Tech Era:</strong> Abhradeep was playing Temple Run and believing he was a hacker because he found the developer options menu on a cheap tablet.
-            </div>
-          </div>
-
-          <div class="timeline-event">
-            <div class="event-year">2018</div>
-            <div class="event-desc">
-              <strong>The Python Phase:</strong> He was writing <code>print("Hello World")</code> in Python and immediately adding "Software Developer & Tech Enthusiast" to his social media profile.
-            </div>
-          </div>
-
-          <div class="timeline-event">
-            <div class="event-year">2021</div>
-            <div class="event-desc">
-              <strong>The Pandemic Sleepover:</strong> Abhradeep was joining virtual classes, immediately muting the tab, and sleeping. He was pretending to understand calculus while actually watching cat videos.
-            </div>
-          </div>
-
-          <div class="timeline-event">
-            <div class="event-year">2023</div>
-            <div class="event-desc">
-              <strong>The Coffee Overdose:</strong> He was drinking triple-shot espresso. He was spending 9 hours debugging a bug caused by a missing semicolon, then blaming the compiler for being "too critical."
-            </div>
-          </div>
-
-          <div class="timeline-event">
-            <div class="event-year">2025</div>
-            <div class="event-desc">
-              <strong>The Dependency Hell:</strong> Abhradeep was running <code>npm install</code> on basic projects, watching his hard drive fill up with 4GB of <code>node_modules</code>. He was sighing heavily.
-            </div>
-          </div>
-
-          <div class="timeline-event">
-            <div class="event-year">2026</div>
-            <div class="event-desc">
-              <strong>The Present Reality:</strong> He was surviving. He is currently being roasted by a nostalgic 90s website while sitting in front of his monitor breathing normally.
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="window-statusbar">
-        <span>Lines: 8</span>
-        <span>Col: 1</span>
-      </div>
-    </div>
-
-    <!-- Window 3: Meme Vault -->
-    <div id="win-memes" class="retro-window window-closed" style="top: 15%; left: 25%; width: 480px;">
-      <div class="window-titlebar" id="win-memes-titlebar">
-        <div class="titlebar-text">
-          <div class="title-icon image-icon-sm"></div>
-          <span>Meme_Vault.exe - Paint Viewer</span>
-        </div>
-        <div class="titlebar-controls">
-          <button class="control-btn btn-minimize" aria-label="Minimize" data-window="win-memes"></button>
-          <button class="control-btn btn-maximize" aria-label="Maximize"></button>
-          <button class="control-btn btn-close" aria-label="Close" data-window="win-memes"></button>
-        </div>
-      </div>
-      <div class="window-menubar">
-        <span class="menu-item"><u>I</u>mage</span>
-        <span class="menu-item"><u>E</u>ffects</span>
-        <span class="menu-item"><u>Z</u>oom</span>
-        <span class="menu-item"><u>H</u>elp</span>
-      </div>
-      <div class="window-body">
-        <div class="meme-viewer-container">
-          <div class="meme-canvas-area" id="meme-canvas-box">
-            <!-- Simulated pixel/dithered graphics. We generate this dynamically or use inline SVG pixel art -->
-            <div id="current-meme-image" class="meme-image-placeholder">
-              <!-- Pixel Art Meme will be loaded here via JS -->
-            </div>
-            <div id="meme-caption" class="meme-caption-text">
-              "Abhradeep was writing Java."
-            </div>
-          </div>
-          <div class="meme-controls">
-            <button id="btn-prev-meme" class="retro-btn">&lt; Prev</button>
-            <span id="meme-index">1 / 5</span>
-            <button id="btn-next-meme" class="retro-btn">Next &gt;</button>
-          </div>
-        </div>
-      </div>
-      <div class="window-statusbar">
-        <span>Image size: 320x240 px</span>
-        <span>Format: DITHERED B&W</span>
-      </div>
-    </div>
-
-    <!-- Window 4: Guestbook -->
-    <div id="win-guestbook" class="retro-window window-closed" style="top: 20%; left: 30%; width: 500px; z-index: 9;">
-      <div class="window-titlebar" id="win-guestbook-titlebar">
-        <div class="titlebar-text">
-          <div class="title-icon guestbook-icon-sm"></div>
-          <span>Guestbook.db - Condolences Ledger (Alive Edition)</span>
-        </div>
-        <div class="titlebar-controls">
-          <button class="control-btn btn-minimize" aria-label="Minimize" data-window="win-guestbook"></button>
-          <button class="control-btn btn-maximize" aria-label="Maximize"></button>
-          <button class="control-btn btn-close" aria-label="Close" data-window="win-guestbook"></button>
-        </div>
-      </div>
-      <div class="window-menubar">
-        <span class="menu-item"><u>R</u>ecord</span>
-        <span class="menu-item"><u>Q</u>uery</span>
-        <span class="menu-item"><u>H</u>elp</span>
-      </div>
-      <div class="window-body scrollable-body">
-        <div class="guestbook-intro">
-          <h3>Leave a Memory</h3>
-          <p>Pay your respects. Note: Abhradeep is still alive, so keep it sarcastic and formatted in the past continuous tense.</p>
-          <div class="divider"></div>
-        </div>
-        
-        <!-- Guestbook Form -->
-        <form id="guestbook-form" class="retro-form">
-          <div class="form-row">
-            <label for="gb-name">Your Name:</label>
-            <input type="text" id="gb-name" required placeholder="NostalgicCoder99">
-          </div>
-          <div class="form-row">
-            <label for="gb-msg">Remembering Abhradeep:</label>
-            <textarea id="gb-msg" required placeholder="I remember when Abhradeep was crying over his git conflicts..." rows="3"></textarea>
-          </div>
-          <div class="form-row form-submit-row">
-            <button type="submit" class="retro-btn">Sign Ledger</button>
-            <button type="reset" class="retro-btn">Clear Form</button>
-          </div>
-        </form>
-
-        <div class="divider"></div>
-        <h3>Memorial Ledger Entries</h3>
-        
-        <!-- Guestbook Entries Container -->
-        <div id="guestbook-entries" class="guestbook-list">
-          <!-- Populated by JS -->
-        </div>
-
-      </div>
-      <div class="window-statusbar">
-        <span id="gb-entry-count">0 entries recorded</span>
-        <span>Secure SQL Connection</span>
-      </div>
-    </div>
-
-    <!-- Window 5: Config.sys (Settings) -->
-    <div id="win-settings" class="retro-window window-closed" style="top: 25%; left: 20%; width: 400px;">
-      <div class="window-titlebar" id="win-settings-titlebar">
-        <div class="titlebar-text">
-          <div class="title-icon settings-icon-sm"></div>
-          <span>Config.sys - Control Panel</span>
-        </div>
-        <div class="titlebar-controls">
-          <button class="control-btn btn-minimize" aria-label="Minimize" data-window="win-settings"></button>
-          <button class="control-btn btn-maximize" aria-label="Maximize"></button>
-          <button class="control-btn btn-close" aria-label="Close" data-window="win-settings"></button>
-        </div>
-      </div>
-      <div class="window-body">
-        <div class="settings-tabs">
-          <div class="tabs-header">
-            <div class="tab-btn tab-active">Display</div>
-            <div class="tab-btn" id="tab-audio-btn">Audio</div>
-          </div>
-          <div class="tab-content" id="tab-content-area">
-            
-            <!-- Tab: Settings details -->
-            <div class="settings-section" id="settings-display">
-              <fieldset class="retro-fieldset">
-                <legend>Monitor Properties</legend>
-                <div class="fieldset-row">
-                  <input type="checkbox" id="chk-crt-glow" checked>
-                  <label for="chk-crt-glow">Enable CRT Glass Phosphor Glow</label>
-                </div>
-                <div class="fieldset-row">
-                  <input type="checkbox" id="chk-crt-scanlines" checked>
-                  <label for="chk-crt-scanlines">Enable CRT Horizontal Scanlines</label>
-                </div>
-                <div class="fieldset-row">
-                  <input type="checkbox" id="chk-crt-curvature">
-                  <label for="chk-crt-curvature">Enable 90's Fisheye Screen Curvature</label>
-                </div>
-              </fieldset>
-              
-              <fieldset class="retro-fieldset">
-                <legend>Color Scheme</legend>
-                <div class="fieldset-row">
-                  <input type="radio" id="color-classic" name="color-scheme" value="classic" checked>
-                  <label for="color-classic">Standard Monochrome (Gray Scale)</label>
-                </div>
-                <div class="fieldset-row">
-                  <input type="radio" id="color-amber" name="color-scheme" value="amber">
-                  <label for="color-amber">Retro Terminal Amber</label>
-                </div>
-                <div class="fieldset-row">
-                  <input type="radio" id="color-matrix" name="color-scheme" value="matrix">
-                  <label for="color-matrix">Phosphor Matrix Green</label>
-                </div>
-              </fieldset>
-            </div>
-
-          </div>
-        </div>
-        
-        <div class="window-footer settings-footer">
-          <button class="retro-btn" id="btn-apply-settings">Apply</button>
-          <button class="retro-btn" id="btn-close-settings" data-window="win-settings">OK</button>
-        </div>
-      </div>
-      <div class="window-statusbar">
-        <span>Settings loaded from CMOS</span>
-      </div>
-    </div>
-
-    <!-- Window 6: Recycle Bin -->
-    <div id="win-recycle" class="retro-window window-closed" style="top: 18%; left: 40%; width: 450px;">
-      <div class="window-titlebar" id="win-recycle-titlebar">
-        <div class="titlebar-text">
-          <div class="title-icon recycle-icon-sm"></div>
-          <span>Recycle Bin - Abandoned Hopes</span>
-        </div>
-        <div class="titlebar-controls">
-          <button class="control-btn btn-minimize" aria-label="Minimize" data-window="win-recycle"></button>
-          <button class="control-btn btn-maximize" aria-label="Maximize"></button>
-          <button class="control-btn btn-close" aria-label="Close" data-window="win-recycle"></button>
-        </div>
-      </div>
-      <div class="window-body">
-        <div class="recycle-layout">
-          <div class="recycle-sidebar">
-            <div class="recycle-info-icon recycle-icon-lg"></div>
-            <p><strong>Recycle Bin</strong></p>
-            <p>Contains files deleted by Abhradeep during his fitful coding sessions.</p>
-            <button class="retro-btn" id="btn-empty-bin">Empty Bin</button>
-          </div>
-          <div class="recycle-files-grid">
-            
-            <div class="recycle-file" data-file="hopes">
-              <div class="icon-sprite document-icon"></div>
-              <span>Hopes_&_Dreams.zip</span>
-            </div>
-
-            <div class="recycle-file" data-file="java">
-              <div class="icon-sprite document-icon"></div>
-              <span>Spaghetti_Java_Code.class</span>
-            </div>
-
-            <div class="recycle-file" data-file="sanity">
-              <div class="icon-sprite document-icon"></div>
-              <span>Sanity_Backup_2019.dat</span>
-            </div>
-
-            <div class="recycle-file" data-file="social">
-              <div class="icon-sprite document-icon"></div>
-              <span>Social_Skills.dll</span>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="window-statusbar">
-        <span id="recycle-status-text">4 object(s) in bin</span>
-        <span>Size: 104 GB</span>
-      </div>
-    </div>
-
-    <!-- Retro Alert Popup Dialog Box (Comedic) -->
-    <div id="retro-alert" class="retro-window alert-closed" style="width: 320px; z-index: 9999;">
-      <div class="window-titlebar">
-        <div class="titlebar-text">
-          <div class="title-icon my-computer-icon-sm"></div>
-          <span>SYSTEM WARNING</span>
-        </div>
-      </div>
-      <div class="window-body">
-        <div class="alert-content-flex">
-          <div class="alert-warning-icon"></div>
-          <div id="alert-message-text" class="alert-message">
-            Error: Critical level of sarcasm detected in Abhradeep's core files. Please hydrate.
-          </div>
-        </div>
-        <div class="alert-footer">
-          <button class="retro-btn" id="btn-alert-ok">Dismiss</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- BOTTOM TASKBAR / START BAR -->
-    <div class="taskbar-container">
-      
-      <!-- Start Menu Button -->
-      <div class="start-btn-container">
-        <button id="start-button" class="retro-btn start-button-btn">
-          <div class="start-logo"></div>
-          <span>Start</span>
-        </button>
-        
-        <!-- Start Menu Popup -->
-        <div id="start-menu" class="start-menu-closed">
-          <div class="start-menu-sidebar">
-            <div class="sidebar-text-rot">Abhradeep OS</div>
-          </div>
-          <div class="start-menu-items">
-            <div class="start-menu-item" data-window="win-about">
-              <div class="icon-sprite my-computer-icon-sm"></div>
-              <span><u>S</u>ystem Profile</span>
-            </div>
-            <div class="start-menu-item" data-window="win-timeline">
-              <div class="icon-sprite document-icon-sm"></div>
-              <span><u>T</u>imeline (2006-Present)</span>
-            </div>
-            <div class="start-menu-item" data-window="win-memes">
-              <div class="icon-sprite image-icon-sm"></div>
-              <span><u>M</u>eme Vault</span>
-            </div>
-            <div class="start-menu-item" data-window="win-guestbook">
-              <div class="icon-sprite guestbook-icon-sm"></div>
-              <span><u>G</u>uestbook Ledger</span>
-            </div>
-            <div class="start-menu-item" data-window="win-settings">
-              <div class="icon-sprite settings-icon-sm"></div>
-              <span><u>C</u>onfig Panel</span>
-            </div>
-            <div class="divider"></div>
-            <div class="start-menu-item" id="start-shutdown">
-              <div class="icon-sprite shutdown-icon-sm"></div>
-              <span>Shut <u>D</u>own...</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Taskbar Minimized Windows List -->
-      <div class="taskbar-windows-list" id="taskbar-open-windows">
-        <!-- Dynamically populated by active windows -->
-      </div>
-
-      <!-- System Tray (Clock, Web counters, Stats) -->
-      <div class="system-tray">
-        <div class="tray-widget" id="tray-stats-breathing" title="Live Breathing Duration Tracker">
-          <span>Age Tracker: </span>
-          <span id="live-breathing-timer">000000000</span>
-        </div>
-        <div class="tray-divider"></div>
-        <div class="tray-widget" id="tray-counter" title="Total Visitor count">
-          <span>VISITORS:</span>
-          <span class="visitor-counter-box" id="visitor-number">0048291</span>
-        </div>
-        <div class="tray-divider"></div>
-        <div class="tray-widget" id="tray-sound-toggle" title="Mute/Unmute Audio Context Synthesizer">
-          <div class="sound-icon-sprite sound-on" id="sound-icon"></div>
-        </div>
-        <div class="tray-divider"></div>
-        <div class="tray-widget font-monospace" id="tray-clock">
-          12:00 AM
-        </div>
-      </div>
-
-    </div>
-
-    <!-- UNDER CONSTRUCTION WEB BANNER DECORATION -->
-    <div class="under-construction-banner">
-      <div class="stripes-tape"></div>
-      <div class="construction-text">
-        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><rect width='32' height='32' fill='black'/><rect x='2' y='2' width='28' height='28' fill='white'/><path d='M16 4 L28 26 L4 26 Z' fill='black'/><path d='M16 7 L25 24 L7 24 Z' fill='white'/><rect x='15' y='12' width='2' height='6' fill='black'/><rect x='15' y='20' width='2' height='2' fill='black'/></svg>" alt="Warning sign" class="retro-gif">
-        <span>SITE UNDER CONSTRUCTION - ABHRADEEP IS CURRENTLY CODING MORE BUGS</span>
-        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><rect width='32' height='32' fill='black'/><rect x='2' y='2' width='28' height='28' fill='white'/><path d='M16 4 L28 26 L4 26 Z' fill='black'/><path d='M16 7 L25 24 L7 24 Z' fill='white'/><rect x='15' y='12' width='2' height='6' fill='black'/><rect x='15' y='20' width='2' height='2' fill='black'/></svg>" alt="Warning sign" class="retro-gif">
-      </div>
-      <div class="stripes-tape"></div>
-    </div>
-    
-  </div>
-
-  <!-- CRT Screen Glare and Curve Overlays -->
-  <div id="crt-overlay" class="crt-overlay-class"></div>
-  <div id="screen-bend-wrapper"></div>
-
-  <!-- Custom Scripts -->
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "filename": "images/img_1.jpg",
+    "title": "Morning Dew at the Hearth",
+    "description": "The grass outside the kitchen window was heavy with dew. The morning light cast a long, cold shadow through the glass, contrasting the warm stove inside.",
+    "category": "Still Life",
+    "date": "2026-06-15",
+    "tags": ["morning", "home", "light-play", "still life"],
+    "aspectRatio": "landscape"
+  },
+  {
+    "id": 2,
+    "filename": "images/img_2.jpg",
+    "title": "Quiet Contemplation",
+    "description": "A quiet portrait of my grandmother in her reading chair. Her hands tell the story of a hundred winter mornings, soft yet resilient.",
+    "category": "Portrait",
+    "date": "2026-06-10",
+    "tags": ["human", "candid", "window-light", "portrait"],
+    "aspectRatio": "portrait"
+  },
+  {
+    "id": 3,
+    "filename": "images/img_3.jpg",
+    "title": "Rainy Reflections, Kyoto",
+    "description": "Caught a sudden downpour on a quiet street. The neon sign of the corner teahouse painted the wet cobblestones in deep crimson and amber.",
+    "category": "Street",
+    "date": "2026-05-28",
+    "tags": ["urban", "rain", "reflection", "street"],
+    "aspectRatio": "landscape"
+  },
+  {
+    "id": 4,
+    "filename": "images/img_4.jpg",
+    "title": "Whispering Ridges",
+    "description": "I hiked up before dawn. When the sun finally broke through the mist, it lit up the pine ridges like golden fingers reaching through the valley.",
+    "category": "Landscape",
+    "date": "2026-05-14",
+    "tags": ["outdoor", "sky", "horizon", "landscape"],
+    "aspectRatio": "landscape"
+  },
+  {
+    "id": 5,
+    "filename": "images/img_5.jpg",
+    "title": "Dandelion in the Wind",
+    "description": "A close-up of a lone seed head clinging to its base on a windy afternoon. The depth of field isolates it as a solitary traveler.",
+    "category": "Nature",
+    "date": "2026-04-30",
+    "tags": ["macro", "detail", "spring", "nature"],
+    "aspectRatio": "square"
+  },
+  {
+    "id": 6,
+    "filename": "images/img_6.jpg",
+    "title": "Venetian Twilight",
+    "description": "As the crowds thinned and the gondolas tied to their wooden stakes began to rock in the rising tide, the entire canal took on a deep velvet indigo.",
+    "category": "Travel",
+    "date": "2026-04-12",
+    "tags": ["architecture", "historic", "journey", "travel"],
+    "aspectRatio": "landscape"
+  },
+  {
+    "id": 7,
+    "filename": "images/img_7.jpg",
+    "title": "Rustic Ceramic Study",
+    "description": "A study of shadows on clay. The rough texture of the handmade vase catches the raking light of late afternoon, casting soft, organic silhouettes.",
+    "category": "Still Life",
+    "date": "2026-03-22",
+    "tags": ["minimalist", "ceramics", "wood", "still life"],
+    "aspectRatio": "square"
+  },
+  {
+    "id": 8,
+    "filename": "images/img_8.jpg",
+    "title": "The Storyteller",
+    "description": "A street portrait of an old book vendor who has sat on the same corner for forty years. His expression is a library in itself.",
+    "category": "Portrait",
+    "date": "2026-03-05",
+    "tags": ["human", "candid", "character", "portrait"],
+    "aspectRatio": "portrait"
+  },
+  {
+    "id": 9,
+    "filename": "images/img_9.jpg",
+    "title": "Urban Solitude",
+    "description": "A lone walker silhouettes against the massive glass facade of the subway station at dusk. A quiet moment in a noisy city.",
+    "category": "Street",
+    "date": "2026-02-18",
+    "tags": ["urban", "shadow", "night", "street"],
+    "aspectRatio": "portrait"
+  },
+  {
+    "id": 10,
+    "filename": "images/img_10.jpg",
+    "title": "Forest Sunbeams",
+    "description": "Walking through the cedar groves after a light rain. The moisture in the air caught the sunbeams, turning the forest into a cathedral of light.",
+    "category": "Nature",
+    "date": "2026-01-27",
+    "tags": ["green", "morning", "moss", "nature"],
+    "aspectRatio": "landscape"
+  },
+  {
+    "id": 11,
+    "filename": "images/img_11.jpg",
+    "title": "Andean Highlands",
+    "description": "A remote road winding through the peaks. The scale of the mountains dwarfed the small stone hut in the foreground, showing the isolated beauty of highland life.",
+    "category": "Travel",
+    "date": "2025-12-04",
+    "tags": ["mountains", "outdoor", "journey", "travel"],
+    "aspectRatio": "landscape"
+  },
+  {
+    "id": 12,
+    "filename": "images/img_12.jpg",
+    "title": "Solitude on the Plains",
+    "description": "A single tree standing in an infinite sea of gold. The wide landscape captures the profound silence of the central plains before winter sets in.",
+    "category": "Landscape",
+    "date": "2025-11-15",
+    "tags": ["outdoor", "horizon", "serene", "landscape"],
+    "aspectRatio": "landscape"
+  }
+]

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Visual Archives of Abhradeep Biswas. Optimized infinite-scrolling gallery catalog showing thousands of photography journals.">
+  <title>Gallery | Abhradeep Biswas</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- Navigation Header -->
+    <header>
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="logo" id="site-logo">
+          Abhradeep<span> Biswas</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+
+        <div class="controls-group">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+            <svg class="moon-icon" viewBox="0 0 24 24">
+              <path
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>
+            <svg class="sun-icon" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m0 13.5V21m9.75-9h-2.25m-13.5 0H3m16.035-6.035l-1.591 1.591M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9zm-9-5.625a5.625 5.625 0 100 11.25 5.625 5.625 0 000-11.25zM5.636 5.636l1.591 1.591m0 10.778l-1.591 1.591M18.364 18.364l-1.591-1.591" />
+            </svg>
+          </button>
+
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="section" style="padding-top: 3rem;">
+
+      <!-- Page Title & Stats Info -->
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <div class="section-title-wrap">
+          <span class="section-label">Archives</span>
+          <h1 class="heading-lg">Visual Journals</h1>
+        </div>
+        <div class="status-counter" id="status-counter">
+          Showing <span id="current-count">0</span> of <span id="total-count">0</span> works
+        </div>
+      </div>
+
+      <!-- Gallery Control Dashboard (Search + Categories) -->
+      <section class="gallery-controls" aria-label="Gallery Controls">
+        <div class="search-filter-row">
+
+          <!-- Live Search -->
+          <div class="search-input-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.637 10.637z" />
+            </svg>
+            <input type="text" id="gallery-search" class="search-input"
+              placeholder="Search by title, story description, or tags..." aria-label="Search images">
+          </div>
+
+          <!-- Sorting -->
+          <div class="sort-select-wrap">
+            <label for="gallery-sort">Sort By</label>
+            <select id="gallery-sort" class="sort-select" aria-label="Sort images order">
+              <option value="newest">Newest First</option>
+              <option value="oldest">Oldest First</option>
+              <option value="alphabetical">Alphabetical</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="category-tags-row" role="group" aria-label="Filter by Category">
+          <button class="category-btn active" data-category="All">All journals</button>
+          <button class="category-btn" data-category="Still Life">Still Life</button>
+          <button class="category-btn" data-category="Portrait">Portraits</button>
+          <button class="category-btn" data-category="Street">Street</button>
+          <button class="category-btn" data-category="Landscape">Landscapes</button>
+          <button class="category-btn" data-category="Nature">Nature</button>
+          <button class="category-btn" data-category="Travel">Travel</button>
+        </div>
+      </section>
+
+      <!-- The High Performance Grid Viewport -->
+      <section class="gallery-grid" id="gallery-grid" aria-live="polite">
+        <!-- Rendered dynamically by gallery.js -->
+      </section>
+
+      <!-- Scroll Sentinel (Intersection target to trigger infinite scroll appending) -->
+      <div id="gallery-sentinel" style="height: 10px; margin-bottom: 2rem;"></div>
+
+      <!-- Loading / Empty / End Catalog Indicators -->
+      <div class="gallery-status" id="gallery-status">
+        <div class="spinner"></div>
+        <span class="status-text" id="gallery-status-text">Loading catalog...</span>
+      </div>
+
+    </main>
+
+    <!-- High Performance Overlay Lightbox modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Detail View">
+
+      <!-- Close trigger -->
+      <button class="lightbox-ctrl lightbox-close" id="lightbox-close" aria-label="Close Lightbox">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Previous Image Trigger -->
+      <button class="lightbox-ctrl lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Previous Image">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+
+      <div class="lightbox-content-wrap">
+        <!-- Main Image -->
+        <div class="lightbox-image-container">
+          <img src="" alt="" class="lightbox-image" id="lightbox-image">
+        </div>
+
+        <!-- Description Tray -->
+        <div class="lightbox-details">
+          <h2 class="lightbox-title" id="lightbox-title">Image Title</h2>
+          <p class="lightbox-desc" id="lightbox-desc">Detailed story and camera setup specifications are printed here
+            dynamically.</p>
+          <div class="lightbox-meta" id="lightbox-meta">
+            <span class="lightbox-category" id="lightbox-category">Category</span>
+            <span>&bull;</span>
+            <span>Date Taken</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next Image Trigger -->
+      <button class="lightbox-ctrl lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Next Image">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-copy">
+          &copy; 2026 Abhradeep Biswas. All rights reserved. Made with care.
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+
+</html>

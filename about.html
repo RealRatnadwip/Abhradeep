@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="About Abhradeep Biswas. Artist statement, philosophy, photography gear, exhibitions, and contact form.">
+  <title>About | Abhradeep Biswas</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- Navigation Header -->
+    <header>
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="logo" id="site-logo">
+          Abhradeep<span> Biswas</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+
+        <div class="controls-group">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+            <svg class="moon-icon" viewBox="0 0 24 24">
+              <path
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>
+            <svg class="sun-icon" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m0 13.5V21m9.75-9h-2.25m-13.5 0H3m16.035-6.035l-1.591 1.591M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9zm-9-5.625a5.625 5.625 0 100 11.25 5.625 5.625 0 000-11.25zM5.636 5.636l1.591 1.591m0 10.778l-1.591 1.591M18.364 18.364l-1.591-1.591" />
+            </svg>
+          </button>
+
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+      <!-- Biography Section -->
+      <section class="section about-section" style="padding-top: 4rem;">
+        <div class="about-grid">
+
+          <!-- Sticky Portrait Image -->
+          <div class="about-portrait-frame">
+            <img src="images/portrait.jpg" alt="Abhradeep Biswas portrait"
+              onerror="handleImageError(this, 'Abhradeep Biswas', 'Portrait')">
+          </div>
+
+          <!-- Bio text & details -->
+          <div class="about-details">
+            <div class="section-title-wrap">
+              <span class="section-label">Biography</span>
+              <h1 class="heading-lg">Hello, I'm Abhradeep.</h1>
+            </div>
+
+            <div class="about-bio">
+              <p>
+                I am a photographer based in the quiet corners of the world, capturing honest moments that reflect our
+                shared human experience. My journey with the camera started as a way to slow down my own life, to find a
+                quiet visual language for things that words could not capture.
+              </p>
+              <p>
+                My work centers on the beauty of <strong>ordinary details</strong>—the texture of worn tables, the
+                warmth of domestic light, and the expressions of subjects in spaces where they feel completely
+                comfortable. I aim for my images to feel like a warm, comforting cup of tea: human, slow-paced, and
+                close to home.
+              </p>
+              <p>
+                Before picking up the camera full-time, I studied human ecology, which deeply shaped how I view the
+                relationship between people and their domestic, urban, or natural environments. I don't see objects or
+                buildings as static; they hold the warmth of the lives lived inside them.
+              </p>
+            </div>
+
+            <!-- Quick info grids (Gear, location, philosophy) -->
+            <div class="info-block-list">
+              <div class="info-block">
+                <span class="info-block-title">Focus Area</span>
+                <span class="info-block-content">Still Life, Honest Portraits, Quiet Landscapes</span>
+              </div>
+              <div class="info-block">
+                <span class="info-block-title">Camera Gear</span>
+                <span class="info-block-content">Manual Rangefinder, 35mm & 50mm Prime Lenses</span>
+              </div>
+              <div class="info-block">
+                <span class="info-block-title">Based In</span>
+                <span class="info-block-content">Kolkata, India & Traveling globally</span>
+              </div>
+              <div class="info-block">
+                <span class="info-block-title">Developing</span>
+                <span class="info-block-content">Handmade chemical prints, natural grading</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials / Quote cards -->
+      <section class="section" style="border-top: 1px solid var(--border-color); padding-bottom: 2rem;">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-label">Connections</span>
+            <h2 class="heading-lg">What people say</h2>
+          </div>
+        </div>
+
+        <div class="featured-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+          <div class="info-block" style="padding: 2rem; gap: 1rem;">
+            <p style="font-family: var(--font-serif); font-style: italic; font-size: 1.1rem; color: var(--text-muted);">
+              "Sitting for a portrait with Abhradeep was less like a shoot and more like catching up with an old friend.
+              He works quietly, waits for the real laughter, and doesn't push for poses. The results look exactly like
+              me, on my best day."
+            </p>
+            <div
+              style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; color: var(--accent-warm);">
+              — Miriam K., Editorial Writer
+            </div>
+          </div>
+
+          <div class="info-block" style="padding: 2rem; gap: 1rem;">
+            <p style="font-family: var(--font-serif); font-style: italic; font-size: 1.1rem; color: var(--text-muted);">
+              "His still life prints hang in our dining room, and they change the mood of the whole space. The way he
+              captures the morning shadows on a table is nothing short of painterly. There is a deep, warm stillness to
+              his photography."
+            </p>
+            <div
+              style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; color: var(--accent-warm);">
+              — Jonathan T., Architect
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Elegant Contact Form -->
+      <section class="section contact-section" id="contact">
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <h2 class="heading-lg">Let's talk.</h2>
+            <p style="color: var(--text-muted);">
+              Whether you want to schedule a portrait session, inquire about editorial assignments, purchase limited
+              edition prints, or simply share a thought, I'd love to hear from you.
+            </p>
+
+            <div class="contact-method" style="margin-top: 1.5rem;">
+              <span class="contact-method-label">General Inquiry</span>
+              <a href="mailto:hello@abhradeep.com" class="contact-method-value"
+                style="color: var(--accent-warm);">hello@abhradeep.com</a>
+            </div>
+
+            <div class="contact-method">
+              <span class="contact-method-label">Social Archives</span>
+              <span class="contact-method-value">@abhradeep.visuals</span>
+            </div>
+          </div>
+
+          <!-- Web Form -->
+          <form class="contact-form" action="#" method="POST"
+            onsubmit="event.preventDefault(); alert('Thank you for reaching out! Since this is a static demonstration, your message was received locally.'); this.reset();">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Eleanor Vance" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="e.g. eleanor@example.com"
+                required>
+            </div>
+
+            <div class="form-group form-group-full">
+              <label for="subject">Project Type</label>
+              <select id="subject" name="subject" class="form-input"
+                style="appearance: none; background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'%235e5953\' stroke-width=\'2\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' d=\'M19.5 8.25l-7.5 7.5-7.5-7.5\' /%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 1rem center; background-size: 14px; cursor: pointer;">
+                <option value="portrait">Honest Portrait Session</option>
+                <option value="editorial">Editorial / Still Life Assignment</option>
+                <option value="prints">Print Orders & Inquiries</option>
+                <option value="other">General Inquiry / A Hello</option>
+              </select>
+            </div>
+
+            <div class="form-group form-group-full">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" class="form-input"
+                placeholder="Tell me a bit about your project or what caught your eye..." required></textarea>
+            </div>
+
+            <div class="form-group-full" style="text-align: right; margin-top: 0.5rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 200px;">Send Message</button>
+            </div>
+          </form>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-copy">
+          &copy; 2026 Abhradeep Biswas. All rights reserved. Made with care.
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
